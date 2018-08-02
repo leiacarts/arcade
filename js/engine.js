@@ -25,9 +25,11 @@ var Engine = (function(global) {
         lastTime,
         id;
 
+//defines moadl and replay
 const modal = document.querySelector('.modal-bg');
 const replay = document.querySelector('.modal-button');
 
+//this triggers modal and replay button
 replay.addEventListener('click', function() {
   modal.classList.toggle('hide');
   player.reset();
@@ -67,6 +69,7 @@ replay.addEventListener('click', function() {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
+         //registers player win and stops animation
          if (player.goal === true) {
            win.cancelAnimationFrame(id);
            modal.classList.toggle('hide');

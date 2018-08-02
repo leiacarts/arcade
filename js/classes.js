@@ -5,7 +5,7 @@ class Avatar {
     this.y = 0;
   }
 
-  render() {
+  render() { //renders game board
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 }
@@ -17,14 +17,11 @@ class Player extends Avatar {
     this.sprite += 'char-boy.png';
     this.step = 101; //right/left along rows
     this.jump = 83; //up/down along columns
-    this.startX = this.step * 2;
-    this.startY = (this.jump * 4) + 55;
+    this.startX = this.step * 2; //horizontal boundaries
+    this.startY = (this.jump * 4) + 55; //vertical boundaries
     this.x = this.startX;
     this.y = this.startY;
     this.goal = false;
-      // needs stuff to update x & y
-      // @param {string} input
-      // - travel direction
   }
 
   handleInput(input) {
