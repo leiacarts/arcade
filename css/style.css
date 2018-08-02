@@ -1,3 +1,34 @@
 body {
     text-align: center;
 }
+
+.modal-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(200,200,200,0.7);
+}
+
+.modal-main {
+  min-width: 200px;
+  width: 50%;
+  height: 150px;
+  background: #fff;
+  transform: translate(50%, 150%);
+}
+
+.modal-header {
+  font-family: monospace, sans-serif;
+  font-size: 1.5em;
+  padding: .5rem;
+}
+
+.modal-button {
+  margin: 2rem;
+  width: 60px;
+  height: 30px;
+}
+
+.hide {
+  display: none;
+}

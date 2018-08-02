@@ -8,22 +8,20 @@ class Avatar {
   render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
-
 }
-
 
 
 class Player extends Avatar {
   constructor() {
     super();
     this.sprite += 'char-boy.png';
-    this.step = 101;
-    this.jump = 83;
+    this.step = 101; //right/left along rows
+    this.jump = 83; //up/down along columns
     this.startX = this.step * 2;
     this.startY = (this.jump * 4) + 55;
     this.x = this.startX;
     this.y = this.startY;
-    this.win = false;
+    this.goal = false;
       // needs stuff to update x & y
       // @param {string} input
       // - travel direction
@@ -54,15 +52,15 @@ class Player extends Avatar {
     }
   }
 
-  update() {
-    for(let enemy of allEnemies) {
+  update() { //tracks where the player is in relation to enemies
+    for(let enemy of allEnemies) { //collisions
       if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2)) {
-          this.reset();
+          this.reset(); //resets upon collision
       }
     }
 
-    if(this.y === 55) {
-      this.win = true;
+    if(this.y === -28) { //makes up for centering & size of sprite
+      this.goal = true;
     }
   }
 

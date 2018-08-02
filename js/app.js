@@ -3,10 +3,10 @@ var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     this.x = x;
-    this.y = y+ 55;
-    this.step = 101;
-    this.boundary = this.step * 5;
-    this.reposition = -this.step;
+    this.y = y + 55; //center bugs in rows
+    this.step = 101; //block horizontal
+    this.boundary = this.step * 5; //bug boundaries horizontal
+    this.reposition = -this.step; //start bugs offscreen
     this.speed = speed;
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
@@ -45,11 +45,14 @@ Enemy.prototype.render = function() {
 const player = new Player();
 const allEnemies = [];
 
-const bug1 = new Enemy(-101, 0, 200);
+const bug1 = new Enemy(-101, 0, 400);
 const bug2 = new Enemy(-101, 83, 300);
-const bug3 = new Enemy((-101 * 2.5), 83, 300);
+const bug3 = new Enemy((-101 * 3), 83, 300);
+const bug4 = new Enemy(-101, 166, 250);
+const bug5 = new Enemy((-101 * 2.5), 166, 150);
+const bug6 = new Enemy((-101 * 3), 249, 300);
 
-allEnemies.push(bug1, bug2, bug3);
+allEnemies.push(bug1, bug2, bug3, bug4, bug5, bug6);
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
