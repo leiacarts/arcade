@@ -45,3 +45,5 @@ Download and open index.html with a browser. The objective of the game is to get
 ## Screenshots
 
 ![screenshot](https://github.com/leiacarts/arcade/blob/master/arcade1.png)
+![screenshot](https://github.com/leiacarts/arcade/blob/master/arcade2.png)
+![screenshot](https://github.com/leiacarts/arcade/blob/master/arcade3.png)
