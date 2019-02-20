@@ -1,28 +1,35 @@
-# Arcade Game Project
-
-An arcade game based on frogger for part three of Udacity's Front-End Web Developer Nanodegree.
+# ARCADE
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Gameplay](#gameplay)
+* [Overview](#overview)
+* [Learning Objectives](#learning-objectives)
 * [Features](#features)
+* [Installation](#installation)
 * [Built With](#built-with)
 * [Acknowledgements](#acknowledgements)
+* [Screenshots](#screenshots)
 
-## Installation
+## Overview
 
-Download and open index.html with a browser.
+ARCADE is an arcade game based on the classic Frogger. Dodge multiple enemies to get to the other side of the road in a JavaScript-based app that allows replays and resets.
 
-## Gameplay
+## Learning Objectives
 
-The objective of the game is to get to the water without colliding with a gross killer roach! Use the arrow keys to move the sprite on the game board. If a roach catches up to you, you're a goner -- don't get hit!
+To utilize object-oriented code and prototypal inheritance to emulate an arcade game.
 
 ## Features
 
 * Replay option
 * Multiple enemies
 * Auto reset
+* Modal popups
+* Object-oriented JS
+* Constructor functions
+
+## Installation
+
+Download and open index.html with a browser. The objective of the game is to get to the water without colliding with a roach. Use the arrow keys to move the sprite on the game board. If a roach catches up to you, the game resets. In order to win, get to the other side of the road.
 
 ## Built With
 
@@ -34,3 +41,7 @@ The objective of the game is to get to the water without colliding with a gross 
 
 * [Rodrick's webinar](https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000)
 * [Matthew Cranford's walkthrough](https://matthewcranford.com/category/blog-posts/walkthrough/arcade-game/)
+
+## Screenshots
+
+![screenshot](https://github.com/leiacarts/arcade/blob/master/arcade1.png)
